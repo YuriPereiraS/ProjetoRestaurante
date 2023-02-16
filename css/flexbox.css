@@ -1,0 +1,241 @@
+/* ----------------------------------------------- */
+   
+   /* cabecalhoPrincipal */ 
+.cabecalhoPrincipal-conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+    /* cabecalhoPrincipal */ 
+
+/* ----------------------------------------------- */
+
+    /* banerPaginaPrincipal */
+
+.banerPaginaPrincipal-link {
+    display: flex;
+    align-items: center;
+}
+    
+
+    /* banerPaginaPrincipal */
+
+/* ----------------------------------------------- */
+
+    /* tituloLinha1 */
+
+.tituloLinha1Produtos-conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+    
+    /* tituloLinha1 */
+    
+/* ........................................................ */
+
+    /* produtosPaginaPrincipal */
+
+.produtosPaginaPrincipal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+    /* produtosPaginaPrincipal */
+
+/* ........................................................ */
+
+    /* listas-produtosPaginaPrincipal */
+
+.listas-produtosPaginaPrincipal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+    /* listas-produtosPaginaPrincipal */
+
+/* ........................................................ */
+
+
+    /* videoSobre */
+
+.videoSobre-conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.videoSobre-sobre {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    
+}
+    /* videoSobre */
+
+ /* ........................................................ */
+
+    /* rodapePrincipal */
+
+ footer{
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+
+.rodapePrincipal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+.rodapePrincipal-textoExplicativo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+}
+
+.rodapePrincipal-contatoForm-fieldset-div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 40%;
+}
+
+.rodapePrincipal-contatoForm-fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+    /* rodapePrincipal */
+
+/* ........................................................ */
+
+    /* rodapeSecundario */
+
+.rodapeSecundario-conteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.rodapeSecundario-redeSocial {
+    display: flex;
+    width: 30%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+    /* rodapeSecundario */
+
+
+@media (max-width: 1568px) {
+    body {
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .produtosPaginaPrincipal {
+        width: 46%;
+        margin: 2% 1%;
+    }
+    .listas-produtosPaginaPrincipal {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .rodapeSecundario-redeSocial {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .cabecalhoPrincipal{
+        padding: 15px 0;
+    }
+
+    .cabecalhoPrincipal-conteiner {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .cabecalhoPrincipal-nav {
+        display: flex;
+    }
+
+    .videoSobre-conteiner {
+        flex-direction: column;
+        
+    }
+    .videoSobre-video {
+        max-width: 75%;
+        width: 768px;
+        padding-right: 0;
+    }
+
+    .videoSobre-sobre {
+        max-width: 75%;
+        padding-left: 0;
+        padding-top: 4%;
+    }
+
+    .rodapePrincipal {
+        flex-direction: column;
+    }
+
+    .rodapePrincipal-textoExplicativo {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .rodapePrincipal-contatoForm-fieldset-div {
+        width: 80%;
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 468px) {
+
+    .cabecalhoPrincipal{
+        padding: 15px 0;
+    }
+
+    .cabecalhoPrincipal-conteiner {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .cabecalhoPrincipal-nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .tituloLinha1Produtos-conteiner {
+        font-size: 0.75em;
+    }
+
+    .produtosPaginaPrincipal-text-itens {
+        font-size: 15px;
+    }
+}
